@@ -13,8 +13,13 @@
 
 # Compiled Dynamic libraries
 *.so
-*.dylib
+*.a
 *.dll
+*.so
+# 不忽略3rd文件夹
+!3rd/**/*.lib
+!3rd/**/*.dll
+!3rd/**/*.dylib
 
 # Fortran module files
 *.mod
@@ -30,3 +35,6 @@
 *.exe
 *.out
 *.app
+
+# 忽略.vs folder
+**/.vs/
